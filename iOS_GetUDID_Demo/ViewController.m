@@ -19,5 +19,10 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)getUDID:(id)sender {
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://127.0.0.1:6699/udid.get"]];
+
+}
 
 @end
